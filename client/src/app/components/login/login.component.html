@@ -1,0 +1,23 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="spec"></div>
+  <div class="container" align="center">
+    <br>
+    <form class="form-signin" (ngSubmit)="login() ">
+      <div class="text-center mb-4">
+        <h3>Log In</h3>
+      </div>
+      <div class="form-label-group">
+        <input id="inputUser" class="form-control input-lg" type="text" name="username"
+               [(ngModel)]="credential.user" placeholder="Username" required autofocus>
+        <br>
+      </div>
+      <div class="form-label-group">
+        <input id="inputPass" class="form-control input-lg" type="password" name="password"
+               [(ngModel)]="credential.pass" placeholder="Password" required>
+        <br>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Log In »</button>
+    </form>
+    <br>
+  </div>
+</div>

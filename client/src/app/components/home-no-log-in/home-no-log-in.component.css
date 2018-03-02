@@ -1,0 +1,25 @@
+.jumbotron{
+  height: calc(100vh - 56px);
+  margin-bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url("https://moneyrep.iaacu.org/wp-content/uploads//2016/10/AdobeStock_100196663-1024x440.jpeg") scroll center/cover no-repeat;
+}
+.container{
+  background-color: white;
+  opacity: .75;
+  padding: 50px;
+  border-radius: 25px;
+  font-family: "Monaco", serif;
+}
+.spec{
+  height: calc(50% - 56px - 180px)
+}
+.btn-primary{
+  background-color: white;
+  color: blue;
+  height: 50px;
+  width: calc(2.82500 * 50px);
+  font-size: 24px;
+}

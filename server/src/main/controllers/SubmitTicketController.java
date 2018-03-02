@@ -22,7 +22,6 @@ public class SubmitTicketController implements HttpController {
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-        System.out.println("stc post");
         String json = req.getReader().lines().reduce((acc, cur) -> acc + cur).get();
         System.out.println(json);
         JSONObject jsonObject;

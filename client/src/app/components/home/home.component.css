@@ -1,0 +1,25 @@
+.jumbotron{
+  height: calc(100vh - 56px);
+  margin-bottom: 0;
+  width: 100%;
+  background: url("http://tiny.cc/zevhry") scroll no-repeat;
+  border-radius: 0;
+  }
+.album{
+  vertical-align: bottom;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: .95;
+  background-color:rgba(128,193,255,0.6);
+}
+.img{
+  width: 200%;
+}
+.container{
+  background-color: white;
+  opacity: .80;
+  padding: 50px;
+  border-radius: 25px;
+  font-family: "Monaco", serif;
+}

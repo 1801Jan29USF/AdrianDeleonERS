@@ -1,0 +1,18 @@
+.table-responsive{
+  padding: 10px;
+  width: available;
+}
+.container{
+  padding: 15px;
+  height: 100vh;
+}
+.nav-item:hover{
+  color: blue;
+  font-style: oblique;
+  background-color: lightgray;
+  width: available;
+}
+.col-md-2{
+  background-color: lightslategray;
+  padding: 0;
+}

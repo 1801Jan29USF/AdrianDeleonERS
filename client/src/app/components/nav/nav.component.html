@@ -1,0 +1,18 @@
+<nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark">
+  <img src="../../../assets/images/coin.png">
+  <a class="navbar-brand" href="#">FaXRS</a>
+
+  <div class="collapse navbar-collapse" id="navbarsExample04">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/employee-home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login" *ngIf="!loggedin()">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" (click)="deleteCookie()" *ngIf="loggedin()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>

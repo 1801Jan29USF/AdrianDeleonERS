@@ -1,0 +1,74 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h2 class="jumbotron-heading">Welcome {{user.fname}}</h2>
+    <p class="lead text-muted">Full name: {{user.fname}} {{user.lname}}</p>
+    <p class="lead text-muted">Email: {{user.email}}</p>
+  </div>
+</section>
+<div class="album py-5">
+  <div class="container">
+    <div id="finmanrow" class="row" *ngIf="user.role_id === 1; else employeerow">
+      <div class="col-md-4">
+        <div class="card mb4 box-shadow" align="center">
+          <img src="../../../assets/images/icons8-ticket-240.png" routerLink="/submit-ticket">
+          <div class="card-body">
+            <h3 class="card-text">
+              Submit Ticket
+            </h3>
+            Send a ticket to a financial advisor to request reimbursement.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb4 box-shadow" align="center">
+          <img src="../../../assets/images/icons8-menu-240.png" routerLink="/view-my-tickets">
+          <div class="card-body">
+            <h3 class="card-text">
+              View My Tickets
+            </h3>
+              View your previously sent tickets and corresponding information.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" *ngIf="user.role_id === 1">
+        <div class="card mb4 box-shadow" align="center">
+          <img src="../../../assets/images/icons8-checkmark-240.png" routerLink="/view-all-tickets">
+          <div class="card-body">
+            <h3 class="card-text">
+              View All Tickets
+            </h3>
+            <p class="card-text">
+              View all tickets sent and respond to those still pending.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #employeerow>
+  <div id="employeerow" class="row" *ngIf="user.role_id === 0">
+    <div class="col-md-6">
+      <div class="card mb4 box-shadow" align="center">
+        <img src="../../../assets/images/icons8-ticket-240.png" routerLink="/submit-ticket">
+        <div class="card-body">
+          <h3 class="card-text">
+            Submit Ticket
+          </h3>
+          Send a ticket to a financial advisor to request reimbursement.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card mb4 box-shadow" align="center">
+        <img src="../../../assets/images/icons8-menu-240.png" routerLink="/view-my-tickets">
+        <div class="card-body">
+          <h3 class="card-text">
+            View My Tickets
+          </h3>
+            View your previously sent tickets and corresponding information.
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
